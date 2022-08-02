@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { SiJavascript, SiCss3, SiHtml5, SiTailwindcss } from "react-icons/si";
 import Head from "next/head";
+import { render } from "react-dom";
 
 export default function Project({ projects }) {
      const router = useRouter();
@@ -8,7 +10,21 @@ export default function Project({ projects }) {
      const soloProject = projects.repo.filter(
           (repo) => repo.name === id.split("-").join(" ")
      );
-     //  console.log(soloProject);
+
+     const renderSwtich = (lan) => {
+          switch (lan) {
+               case "JavaScript":
+                    return <SiJavascript />;
+               case "CSS":
+                    return <SiCss3 />;
+               case "HTML":
+                    return <SiHtml5 />;
+               case "TailwindCSS":
+                    return <SiTailwindcss />;
+               default:
+                    return lan;
+          }
+     };
 
      return (
           <section className="container-xl flex items-center justify-center flex-col text-[#eaeaea] font-robotoMono tracking-tighter px-5 md:px-0">
@@ -52,9 +68,9 @@ export default function Project({ projects }) {
                                         {project.techUsed.map((language, i) => (
                                              <li
                                                   key={i}
-                                                  className="text-[.75rem] mr-2 bg-[#383838] py-0.5 px-2 rounded tracking-widest"
+                                                  className="text-xl mr-2 py-0.5 px-2 rounded tracking-widest"
                                              >
-                                                  {language}
+                                                  {renderSwtich(language)}
                                              </li>
                                         ))}
                                    </ul>

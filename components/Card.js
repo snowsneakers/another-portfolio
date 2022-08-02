@@ -1,9 +1,25 @@
 import { FaLaptop } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { SiJavascript, SiCss3, SiHtml5, SiTailwindcss } from "react-icons/si";
 
 const Card = ({ project }) => {
      const linkUrl = `/project/${project.name.split(" ").join("-")}`;
+
+     const renderSwtich = (lan) => {
+          switch (lan) {
+               case "JavaScript":
+                    return <SiJavascript />;
+               case "CSS":
+                    return <SiCss3 />;
+               case "HTML":
+                    return <SiHtml5 />;
+               case "TailwindCSS":
+                    return <SiTailwindcss />;
+               default:
+                    return lan;
+          }
+     };
 
      return (
           <Link href={linkUrl}>
@@ -23,9 +39,9 @@ const Card = ({ project }) => {
                          {project.techUsed.map((language, i) => (
                               <li
                                    key={i}
-                                   className="text-[.75rem] mr-2 bg-[#383838] py-0.5 px-2 rounded mb-1 tracking-widest"
+                                   className="text-xl mr-2 py-0.5 px-2 rounded mb-1 tracking-widest"
                               >
-                                   {language}
+                                   {renderSwtich(language)}
                               </li>
                          ))}
                     </ul>

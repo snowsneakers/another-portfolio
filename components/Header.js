@@ -10,7 +10,7 @@ const Header = () => {
                     </h1>
                </Link>
                <ul className="flex items-center justify-evenly capitalize">
-                    <li className="hover:bg-[#424242] transition duration-300 ease-in-out py-0.5 px-2 rounded">
+                    <li className="hover:bg-[#424242] transition duration-300 ease-in-out py-0.5 px-2 rounded font-bold">
                          <Link href="/contact">contact</Link>
                     </li>
                </ul>
