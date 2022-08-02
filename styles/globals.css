@@ -7,7 +7,7 @@
 @tailwind utilities;
 @layer base {
      body {
-          background-color: #111111;
+          @apply bg-white dark:bg-[#111111];
      }
      html {
           font-family: Roboto, system-ui, sans-serif;

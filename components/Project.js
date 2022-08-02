@@ -28,7 +28,7 @@ export default function Project({ projects }) {
      };
 
      return (
-          <section className="container-xl flex items-center justify-center flex-col text-[#eaeaea] tracking-tighter px-5 md:px-0">
+          <section className="container-xl flex items-center justify-center flex-col text-black dark:text-[#eaeaea] tracking-tighter px-5 md:px-0">
                <Head>
                     <title>{id}</title>
                     <meta charSet="utf-8" />
@@ -58,10 +58,10 @@ export default function Project({ projects }) {
                                    <h1 className="text-3xl mb-3 capitalize">
                                         {name}
                                    </h1>
-                                   <p className="text-md md:text-lg text-[#b1b1b1] mb-3">
+                                   <p className="text-md md:text-lg text-black dark:text-[#b1b1b1] mb-3">
                                         {description}
                                    </p>
-                                   <ul className="flex items-center justify-start text-[#eaeaea]">
+                                   <ul className="flex items-center justify-start text-black dark:text-[#eaeaea]">
                                         {project.techUsed.map((language, i) => (
                                              <li
                                                   key={i}
@@ -90,7 +90,7 @@ export default function Project({ projects }) {
                                                   href={project.githubLink}
                                                   target="_blank"
                                                   rel="noreferrer"
-                                                  className="flex items-center justify-center py-0.5 px-1 rounded mr-1 text-sm bg-[#2A2A2A] hover:bg-[#424242] tracking-widest"
+                                                  className="flex items-center justify-center py-0.5 px-1 rounded mr-1 text-sm bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] tracking-widest"
                                              >
                                                   Github{" "}
                                                   <FaGithub className="ml-1" />
@@ -99,7 +99,7 @@ export default function Project({ projects }) {
                                                   href={project.liveLink}
                                                   target="_blank"
                                                   rel="noreferrer"
-                                                  className="flex items-center justify-center py-0.5 px-1 rounded text-sm bg-[#2A2A2A] hover:bg-[#424242] tracking-widest"
+                                                  className="flex items-center justify-center py-0.5 px-1 rounded text-sm bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] tracking-widest"
                                              >
                                                   Live{" "}
                                                   <FaExternalLinkAlt className="ml-1" />

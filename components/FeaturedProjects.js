@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
      // // console.log(projects.data)
 
      return (
-          <section className="container-xl flex justify-center text-[#eaeaea] tracking-tighter md:pb-20">
+          <section className="container-xl flex justify-center text-black dark:text-[#eaeaea] tracking-tighter md:pb-20">
                <div className="border-[#b1b1b1] py-10 px-5 md:px-0">
                     <h1 className="text-3xl mb-5">Projects</h1>
                     <div className="w-full flex items-center justify-around flex-wrap gap-2">
