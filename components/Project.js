@@ -123,7 +123,10 @@ export default function Project({ projects }) {
                                                             .join("-") !== id
                                              )
                                              .map((project) => (
-                                                  <Card project={project} />
+                                                  <Card
+                                                       key={project.id}
+                                                       project={project}
+                                                  />
                                              ))}
                                    </div>
                               </section>
