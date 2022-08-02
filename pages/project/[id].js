@@ -5,10 +5,10 @@ import { projects } from "../../data/projects";
 export default function soloProject(repo) {
      // console.log(repo);
      return (
-          <>
+          <main className="container-xl w-full md:w-[880px] mx-auto">
                <Header />
                <Project projects={repo} />
-          </>
+          </main>
      );
 }
 

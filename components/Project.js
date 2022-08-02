@@ -53,11 +53,8 @@ export default function Project({ projects }) {
                          description,
                     } = project;
                     return (
-                         <section
-                              key={project.id}
-                              className="my-10 md:my-20 w-full md:w-[880px]"
-                         >
-                              <div className="w-full md:w-[880px] border-b border-dashed pb-5 mb-10">
+                         <section key={project.id} className="my-10">
+                              <div className="border-b border-dashed pb-5 mb-10">
                                    <h1 className="text-3xl mb-3 capitalize">
                                         {name}
                                    </h1>
@@ -83,7 +80,7 @@ export default function Project({ projects }) {
                                              className="mx-auto"
                                         />
                                    </div>
-                                   <div className="w-full md:w-[800px] mx-auto pb-5">
+                                   <div className="pb-5">
                                         <p className="mb-3">{blurb}</p>
                                         <p className="mb-3">
                                              {blurbConclusion}
@@ -114,7 +111,7 @@ export default function Project({ projects }) {
                                    <h2 className="text-3xl mb-5">
                                         More Projects
                                    </h2>
-                                   <div className="w-full flex items-center justify-around flex-wrap gap-2">
+                                   <div className="flex items-center justify-around flex-wrap gap-2">
                                         {projects.repo
                                              .filter(
                                                   (project) =>

@@ -7,7 +7,7 @@ import FeaturedProjects from "../components/FeaturedProjects";
 
 export default function Home({ projects }) {
      return (
-          <div className="container-xl w-full md:w-[880px] mx-auto">
+          <main className="container-xl w-full md:w-[880px] mx-auto">
                <Head>
                     <title>Patrick Snowden</title>
                     <meta charSet="utf-8" />
@@ -27,6 +27,6 @@ export default function Home({ projects }) {
                <Header />
                <Hero />
                <FeaturedProjects />
-          </div>
+          </main>
      );
 }

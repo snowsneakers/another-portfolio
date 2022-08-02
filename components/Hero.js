@@ -3,7 +3,7 @@ import Link from "next/link";
 const Hero = () => {
      return (
           <section className="container-xl flex justify-center text-[#eaeaea] font-robotoMono tracking-tighter">
-               <div className="w-full md:w-[880px] border-b border-dashed border-[#b1b1b1] py-10 md:py-20 px-5 md:px-0">
+               <div className="border-b border-dashed border-[#b1b1b1] my-10 pb-10 px-5 md:px-0">
                     <h1 className="text-4xl md:text-6xl  mb-10">
                          Software Engineer
                          <br />
@@ -28,7 +28,7 @@ const Hero = () => {
                          experience in biomechanics and working with athletes.{" "}
                     </p>
                     <ul className="flex items-center justify-between w-48 text-[#b1b1b1]">
-                         <li className="cursor-pointer text-xl">
+                         <li className="cursor-pointer text-xl hover:scale-105 transition duration-300 ease-in-out">
                               <a
                                    href="https://github.com/snowsneakers"
                                    target="_blank"
@@ -37,7 +37,7 @@ const Hero = () => {
                                    <FaGithub />
                               </a>
                          </li>
-                         <li className="cursor-pointer text-xl">
+                         <li className="cursor-pointer text-xl hover:scale-105 transition duration-300 ease-in-out">
                               <a
                                    href="https://www.linkedin.com/in/patricksnowden/"
                                    target="_blank"
@@ -46,7 +46,7 @@ const Hero = () => {
                                    <FaLinkedin />
                               </a>
                          </li>
-                         <li className="cursor-pointer text-xl">
+                         <li className="cursor-pointer text-xl hover:scale-110 transition duration-300 ease-in-out">
                               <a
                                    href="https://twitter.com/snowsneakers_"
                                    target="_blank"
