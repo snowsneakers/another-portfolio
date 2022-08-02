@@ -12,8 +12,8 @@ const Hero = () => {
                          through colaboration.
                     </h1>
                     <p className="mb-10 text-black dark:text-[#b1b1b1] leading-7">
-                         👋🏾 I am Pat, a Ventura County based software engineer.
-                         I have always had two loves, computing and the human
+                         👋🏾 I'm Pat, a Ventura County based software engineer. I
+                         have always had two loves, computing and the human
                          body. I studied exercise science and became fascinated
                          with biomechanics. Throughout undergrad and after
                          graduation, I worked as a basketball coach. I used
