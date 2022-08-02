@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Socials from "../components/Socials";
 const Contact = () => {
      return (
-          <main className="container-xl w-full md:w-[880px] mx-auto md:py-0">
+          <main className="container-xl w-full md:w-[880px] mx-auto px-5 md:px-0">
                <Header />
                <Form />
                <Socials />
