@@ -3,10 +3,12 @@ import Header from "../components/Header";
 import Socials from "../components/Socials";
 const Contact = () => {
      return (
-          <main className="container-xl w-full md:w-[880px] mx-auto px-5 md:px-0">
+          <main className="container-xl w-full md:w-[880px] mx-auto md:px-0">
                <Header />
-               <Form />
-               <Socials />
+               <div className="px-5 md:px-0">
+                    <Form />
+                    <Socials />
+               </div>
           </main>
      );
 };
