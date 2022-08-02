@@ -17,7 +17,7 @@ export default function Home({ projects }) {
                     />
                     <meta
                          property="og:title"
-                         content="Project Made by Patrick Snowden"
+                         content="Check Out My Portfolio!"
                     />
                     <link
                          rel="icon"

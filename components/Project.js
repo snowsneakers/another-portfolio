@@ -21,7 +21,7 @@ export default function Project({ projects }) {
                     />
                     <meta
                          property="og:title"
-                         content="Project Made by Patrick Snowden"
+                         content="Check Out My Portfolio!"
                     />
                </Head>
                {soloProject.map((project) => {
@@ -39,7 +39,7 @@ export default function Project({ projects }) {
                     return (
                          <section
                               key={id}
-                              className="my-20 w-full md:w-[880px]"
+                              className="my-10 md:my-20 w-full md:w-[880px]"
                          >
                               <div className="w-full md:w-[880px] border-b border-dashed pb-5 mb-10">
                                    <h1 className="text-3xl mb-3 capitalize">
