@@ -6,7 +6,12 @@ const Form = () => {
                <h1 className="text-4xl text-black dark:text-white">
                     Get in touch 👋🏾
                </h1>
-               <form className="py-10 text-black dark:text-white border-b border-dashed">
+               <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    className="py-10 text-black dark:text-white border-b border-dashed"
+               >
                     <div className="flex items-center justify-evenly gap-5 mb-5">
                          <div className="w-full">
                               <label htmlFor="name" className="block">
