@@ -7,12 +7,13 @@ const Form = () => {
                     Get in touch 👋🏾
                </h1>
                <form
-                    netlify
                     name="contact"
                     method="POST"
                     data-netlify="true"
+                    action="/success"
                     className="py-10 text-black dark:text-white border-b border-dashed"
                >
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="flex items-center justify-evenly gap-5 mb-5">
                          <div className="w-full">
                               <label htmlFor="name" className="block">
@@ -21,6 +22,7 @@ const Form = () => {
                               <input
                                    type="text"
                                    name="name"
+                                   id="name"
                                    placeholder="Name"
                                    className="p-1 w-full text-black indent-1 bg-gray-200 dark:bg-[#191919]"
                                    required
@@ -33,6 +35,7 @@ const Form = () => {
                               <input
                                    type="email"
                                    name="email"
+                                   id="email"
                                    placeholder="Email"
                                    className="p-1 w-full text-black indent-1 bg-gray-200 dark:bg-[#191919]"
                                    required
@@ -47,6 +50,7 @@ const Form = () => {
                               rows="5"
                               cols="30"
                               name="message"
+                              id="message"
                          />
                     </div>
                     <button className="bg-gray-200 dark:bg-[#191919] flex items-center justify-center py-1 px-2 w-1/2 hover:bg-gray-300 dark:hover:bg-[#424242] transition duration-300 ease-in-out">
