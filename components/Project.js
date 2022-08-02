@@ -28,7 +28,7 @@ export default function Project({ projects }) {
      };
 
      return (
-          <section className="container-xl flex items-center justify-center flex-col text-[#eaeaea] font-robotoMono tracking-tighter px-5 md:px-0">
+          <section className="container-xl flex items-center justify-center flex-col text-[#eaeaea] tracking-tighter px-5 md:px-0">
                <Head>
                     <title>{id}</title>
                     <meta charSet="utf-8" />

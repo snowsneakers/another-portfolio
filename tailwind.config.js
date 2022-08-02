@@ -8,7 +8,7 @@ module.exports = {
           extend: {
                fontFamily: {
                     roboto: ["Roboto", "sans-serif"],
-                    robotoMono: ["Arial", "sans-serif"],
+                    robotoMono: ["Roboto Mono", "sans-serif"],
                },
                screens: {
                     md: "880px",

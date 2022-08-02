@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import Link from "next/link";
 const Hero = () => {
      return (
-          <section className="container-xl flex justify-center text-[#eaeaea] font-robotoMono tracking-tighter">
+          <section className="container-xl flex justify-center text-[#eaeaea] tracking-tighter">
                <div className="border-b border-dashed border-[#b1b1b1] my-10 pb-10 px-5 md:px-0">
                     <h1 className="text-4xl md:text-6xl  mb-10">
                          Software Engineer
