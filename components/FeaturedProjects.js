@@ -20,7 +20,7 @@ const FeaturedProjects = () => {
 
      return (
           <section className="container-xl flex justify-center text-[#eaeaea] font-robotoMono tracking-tighter md:pb-20">
-               <div className="border-[#b1b1b1] py-10 md:py-20 px-5 md:px-0">
+               <div className="border-[#b1b1b1] py-10 px-5 md:px-0">
                     <h1 className="text-3xl mb-5">Projects</h1>
                     <div className="w-full flex items-center justify-around flex-wrap gap-2">
                          {projects.map((project) => (

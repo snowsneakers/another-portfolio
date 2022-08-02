@@ -19,6 +19,10 @@ export default function Home({ projects }) {
                          property="og:title"
                          content="Check Out My Portfolio!"
                     />
+                    <meta
+                         name="description"
+                         content="Portfolio of Patrick Snowden"
+                    />
                     <link
                          rel="icon"
                          href="https://pbs.twimg.com/profile_images/1475272137178902530/vdWg7gyM_400x400.jpg"
