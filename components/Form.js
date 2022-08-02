@@ -7,6 +7,7 @@ const Form = () => {
                     Get in touch 👋🏾
                </h1>
                <form
+                    netlify
                     name="contact"
                     method="POST"
                     data-netlify="true"
