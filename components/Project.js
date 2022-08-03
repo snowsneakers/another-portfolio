@@ -4,6 +4,7 @@ import { SiJavascript, SiCss3, SiHtml5, SiTailwindcss } from "react-icons/si";
 import Head from "next/head";
 import { render } from "react-dom";
 import Card from "./Card";
+import Image from "next/image";
 
 export default function Project({ projects }) {
      const router = useRouter();
@@ -54,7 +55,7 @@ export default function Project({ projects }) {
                     } = project;
                     return (
                          <section key={project.id} className="my-10">
-                              <div className="border-b border-dashed pb-5 mb-10">
+                              <div className="border-b border-dashed border-[#b1b1b1] pb-5 mb-10">
                                    <h1 className="text-3xl mb-3 capitalize">
                                         {name}
                                    </h1>
@@ -72,12 +73,20 @@ export default function Project({ projects }) {
                                         ))}
                                    </ul>
                               </div>
-                              <section className="border-b border-dashed pb-5">
+                              <section className="border-b border-dashed border-[#b1b1b1] pb-5">
                                    <div className="mb-10">
-                                        <img
+                                        {/* <img
                                              src={image}
                                              alt=""
                                              className="mx-auto"
+                                        /> */}
+                                        <Image
+                                             src={image}
+                                             alt="project preview"
+                                             width={880}
+                                             height={495}
+                                             blurDataURL={image}
+                                             placeholder="blur"
                                         />
                                    </div>
                                    <div className="pb-5">

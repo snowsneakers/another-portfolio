@@ -13,6 +13,9 @@ module.exports = {
                screens: {
                     md: "880px",
                },
+               images: {
+                    domains: ["github.com"],
+               },
           },
      },
      plugins: [],
