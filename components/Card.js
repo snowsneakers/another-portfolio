@@ -1,7 +1,15 @@
 import { FaLaptop } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { SiJavascript, SiCss3, SiHtml5, SiTailwindcss } from "react-icons/si";
+import {
+     SiJavascript,
+     SiCss3,
+     SiHtml5,
+     SiTailwindcss,
+     SiReact,
+     SiNextdotjs,
+} from "react-icons/si";
+import { FaNode } from "react-icons/fa";
 
 const Card = ({ project }) => {
      const linkUrl = `/project/${project.name.split(" ").join("-")}`;
@@ -16,6 +24,12 @@ const Card = ({ project }) => {
                     return <SiHtml5 />;
                case "TailwindCSS":
                     return <SiTailwindcss />;
+               case "React":
+                    return <SiReact />;
+               case "node":
+                    return <FaNode />;
+               case "Next":
+                    return <SiNextdotjs />;
                default:
                     return lan;
           }

@@ -1,8 +1,14 @@
 import { useRouter } from "next/router";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { SiJavascript, SiCss3, SiHtml5, SiTailwindcss } from "react-icons/si";
+import { FaGithub, FaExternalLinkAlt, FaNode } from "react-icons/fa";
+import {
+     SiJavascript,
+     SiCss3,
+     SiHtml5,
+     SiTailwindcss,
+     SiReact,
+     SiNextdotjs,
+} from "react-icons/si";
 import Head from "next/head";
-import { render } from "react-dom";
 import Card from "./Card";
 import Image from "next/image";
 
@@ -12,6 +18,8 @@ export default function Project({ projects }) {
      const soloProject = projects.repo.filter(
           (repo) => repo.name === id.split("-").join(" ")
      );
+
+     console.log(projects.repo.map((x) => x.image));
 
      const renderSwtich = (lan) => {
           switch (lan) {
@@ -23,6 +31,12 @@ export default function Project({ projects }) {
                     return <SiHtml5 />;
                case "TailwindCSS":
                     return <SiTailwindcss />;
+               case "React":
+                    return <SiReact />;
+               case "node":
+                    return <FaNode />;
+               case "Next":
+                    return <SiNextdotjs />;
                default:
                     return lan;
           }
@@ -55,7 +69,7 @@ export default function Project({ projects }) {
                     } = project;
                     return (
                          <section key={project.id} className="my-10">
-                              <div className="border-b border-dashed border-[#b1b1b1] pb-5 mb-10">
+                              <div className="border-b border-dashed pb-5 mb-10">
                                    <h1 className="text-3xl mb-3 capitalize">
                                         {name}
                                    </h1>
@@ -73,20 +87,21 @@ export default function Project({ projects }) {
                                         ))}
                                    </ul>
                               </div>
-                              <section className="border-b border-dashed border-[#b1b1b1] pb-5">
-                                   <div className="mb-10">
+                              <section className="border-b border-dashed pb-5">
+                                   <div className="flex items-center justify-center mb-10 relative">
                                         {/* <img
-                                             src={image}
+                                             src={image.src || image}
                                              alt=""
                                              className="mx-auto"
                                         /> */}
                                         <Image
-                                             src={image}
+                                             src={image.src || image}
                                              alt="project preview"
-                                             width={880}
-                                             height={495}
-                                             blurDataURL={image}
+                                             width={image.width || 880}
+                                             height={image.height || 495}
+                                             blurDataURL={image.src || image}
                                              placeholder="blur"
+                                             className="rounded"
                                         />
                                    </div>
                                    <div className="pb-5">

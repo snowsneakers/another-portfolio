@@ -1,14 +1,17 @@
+import moodyImg from "../assets/moody-songs.png";
+import portfolioImg from "../assets/portfolio.png";
+
 export const projects = [
      {
           id: 1,
           name: "portfolio",
-          image: "https://github.com/snowsneakers/porfolio/raw/main/assets/portfoliogif.gif",
-          techUsed: ["JavaScript", "CSS", "HTML"],
+          image: portfolioImg,
+          techUsed: ["Next", "TailwindCSS"],
           blurb: "This is my fully responsive portfolio, also known as, the side project that is never complete. I like to think my portfolio evolves as I continue to learn. I put hardwork and time into making something I am proud of.",
           blurbConclusion:
                " I have learned that my portfolio will never be perfect, but it can display so much about me and my work.",
           description: "A fully responsive personal portfolio.",
-          githubLink: "https://github.com/snowsneakers/porfolio",
+          githubLink: "https://github.com/snowsneakers/another-portfolio",
           liveLink: "https://www.patricksnowden.com/",
      },
      {
@@ -34,5 +37,17 @@ export const projects = [
           description: "A game to test your pokemon knowledge!",
           githubLink: "https://github.com/snowsneakers/Whos-That-Pokemon",
           liveLink: "https://whosthatpokemonsp.netlify.app/",
+     },
+     {
+          id: 4,
+          name: "moody songs",
+          image: moodyImg,
+          techUsed: ["React", "TailwindCSS", "node"],
+          blurb: "This will take everyone back to the good old days, the 90s. I wanted to create something using the pokeapi.co API, so I made a game to test your Pokemon knowledge. Chose your favorite generation, start guessing Pokemon, and get a high score! The Pokemon are pulled from the pokeapi.co API randomly and by selected generation. The silhouette is just some simple css.",
+          blurbConclusion:
+               "I wanted to make a game that utilized local storage to learn more about it and so users could come back and try and beat their previous high score. This project was also good help with bolstering my API familiarity.",
+          description: "Match your mood with a song.",
+          githubLink: "https://github.com/snowsneakers/moody-songs-react",
+          liveLink: "https://moody-songs.netlify.app/",
      },
 ];
