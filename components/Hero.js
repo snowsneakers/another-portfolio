@@ -56,12 +56,12 @@ const Hero = () => {
                               </a>
                          </li>
                          <li>
-                              <button
+                              <a
+                                   href="https://docs.google.com/document/d/1FgMPQSE6xtVmMgXe8GX61sld-Bf6XsC3KVBiAdudmIM/edit?usp=sharing"
                                    className="bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] transition duration-300 ease-in-out rounded-full px-2 py-0.5 text-md md:text-sm"
-                                   onClick={() => alert("Coming soon!")}
                               >
                                    Resume
-                              </button>
+                              </a>
                          </li>
                     </ul>
                </div>

@@ -54,7 +54,7 @@ export default function Project({ projects }) {
                     } = project;
                     return (
                          <section key={project.id} className="my-10">
-                              <div className="border-b border-dashed pb-5 mb-10">
+                              <div className="border-b border-dashed border-[#b1b1b1] pb-5 mb-10">
                                    <h1 className="text-3xl mb-3 capitalize">
                                         {name}
                                    </h1>
@@ -72,7 +72,7 @@ export default function Project({ projects }) {
                                         ))}
                                    </ul>
                               </div>
-                              <section className="border-b border-dashed pb-5">
+                              <section className="border-b border-dashed border-[#b1b1b1] pb-5">
                                    <div className="mb-10">
                                         <img
                                              src={image}
