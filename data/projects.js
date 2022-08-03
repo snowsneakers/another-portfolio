@@ -19,7 +19,7 @@ export const projects = [
           name: "poke prices",
           image: "https://github.com/snowsneakers/pokemon-prices/blob/main/assets/pokeprices.gif?raw=true",
           techUsed: ["JavaScript", "TailwindCSS", "HTML"],
-          blurb: "Dust off those old card binders! Pokemon card prices are crazy right now. Using the Weatherdbi API I created an app to let the user search for any Pokemon card and see the price. Using OOP classes, the information is pulled from the api and appended to the DOM. The price information is mainuplated using array methods.",
+          blurb: "Dust off those old card binders! Pokemon card prices are crazy right now. Using the pokemonTCG API I created an app to let the user search for any Pokemon card and see the price. Using OOP, the information is pulled from the api and appended to the DOM. The price information is mainuplated using array methods.",
           blurbConclusion:
                " This project allowed me to work on my Tailwind CSS skills, furthered my knowledge with OOP, and make me regret not keeping good care of my Pokemon cards.",
           description: "Check the current price of pokemon cards.",
@@ -43,9 +43,9 @@ export const projects = [
           name: "moody songs",
           image: moodyImg,
           techUsed: ["React", "TailwindCSS", "node"],
-          blurb: "This will take everyone back to the good old days, the 90s. I wanted to create something using the pokeapi.co API, so I made a game to test your Pokemon knowledge. Chose your favorite generation, start guessing Pokemon, and get a high score! The Pokemon are pulled from the pokeapi.co API randomly and by selected generation. The silhouette is just some simple css.",
+          blurb: "Feeling down, angry, or just want to chill ? Use this app to listen to songs that match your mood. Select the emoji that matches your mood and you will be presented with songs. This app uses an API I made that contains information for all the songs!",
           blurbConclusion:
-               "I wanted to make a game that utilized local storage to learn more about it and so users could come back and try and beat their previous high score. This project was also good help with bolstering my API familiarity.",
+               "This project allowed me to continue working on my backend growth, as well as, refine my React and TailwindCSS skills.",
           description: "Match your mood with a song.",
           githubLink: "https://github.com/snowsneakers/moody-songs-react",
           liveLink: "https://moody-songs.netlify.app/",
