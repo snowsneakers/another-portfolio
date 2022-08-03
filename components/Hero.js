@@ -58,6 +58,8 @@ const Hero = () => {
                          <li>
                               <a
                                    href="https://drive.google.com/file/d/1dqSEtRB5rDv3jc855zXP8X79velFlGJd/view?usp=sharing"
+                                   target="_blank"
+                                   rel="noreferrer"
                                    className="bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] transition duration-300 ease-in-out rounded-full px-2 py-0.5 text-md md:text-sm"
                               >
                                    Resume
