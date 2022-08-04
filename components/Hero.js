@@ -9,7 +9,7 @@ const Hero = () => {
                          <br />
                          solving problems
                          <br />
-                         through colaboration.
+                         through collaboration.
                     </h1>
                     <p className="mb-10 text-black dark:text-[#b1b1b1] leading-7">
                          👋🏾 {"I'm"} Pat, a Ventura County based software
