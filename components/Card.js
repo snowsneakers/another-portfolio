@@ -10,6 +10,7 @@ import {
      SiNextdotjs,
 } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Card = ({ project }) => {
      const linkUrl = `/project/${project.name.split(" ").join("-")}`;
@@ -37,8 +38,13 @@ const Card = ({ project }) => {
 
      return (
           <Link href={linkUrl}>
-               <section className="bg-gray-200 dark:bg-[#191919] mb-5 rounded p-5 w-full md:w-[430px] min-h-[175px] flex flex-col items-start justify-between cursor-pointer hover:bg-gray-300 dark:hover:bg-[#424242] transition duration-300 ease-in-out ">
-                    <div className="flex items-center justify-start text-black dark:text-[#eaeaea]">
+               <motion.section className="bg-gray-200 dark:bg-[#191919] mb-5 rounded p-5 w-full md:w-[430px] min-h-[175px] flex flex-col items-start justify-between cursor-pointer hover:bg-gray-300 dark:hover:bg-[#424242] transition duration-300 ease-in-out ">
+                    <div
+                         className="flex items-center justify-start text-black dark:text-[#eaeaea]"
+                         initial={{ opacity: 0 }}
+                         animate={{ opacity: 1 }}
+                         exit={{ opacity: 0 }}
+                    >
                          <FaLaptop className="mr-1.5" />
                          <h1 className="text-md">
                               {project.name.split(" ").join("-")}
@@ -59,7 +65,7 @@ const Card = ({ project }) => {
                               </li>
                          ))}
                     </ul>
-               </section>
+               </motion.section>
           </Link>
      );
 };

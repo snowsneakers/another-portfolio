@@ -114,7 +114,7 @@ export default function Project({ projects }) {
                                                   href={project.githubLink}
                                                   target="_blank"
                                                   rel="noreferrer"
-                                                  className="font-bold flex items-center justify-center py-0.5 px-1 rounded mr-1 text-sm bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] tracking-widest"
+                                                  className="font-medium flex items-center justify-center py-0.5 px-1 rounded mr-1 text-sm bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] tracking-wide"
                                              >
                                                   Github{" "}
                                                   <FaGithub className="ml-1" />
@@ -123,7 +123,7 @@ export default function Project({ projects }) {
                                                   href={project.liveLink}
                                                   target="_blank"
                                                   rel="noreferrer"
-                                                  className="font-bold flex items-center justify-center py-0.5 px-1 rounded text-sm bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] tracking-widest"
+                                                  className="font-medium flex items-center justify-center py-0.5 px-1 rounded text-sm bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] tracking-wide"
                                              >
                                                   Live{" "}
                                                   <FaExternalLinkAlt className="ml-1" />

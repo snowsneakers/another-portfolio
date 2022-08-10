@@ -4,10 +4,16 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import FeaturedProjects from "../components/FeaturedProjects";
+import { motion } from "framer-motion";
 
 export default function Home({ projects }) {
      return (
-          <main className="container-xl w-full md:w-[880px] mx-auto">
+          <motion.main
+               className="container-xl w-full md:w-[880px] mx-auto"
+               initial={{ opacity: 0 }}
+               animate={{ opacity: 1 }}
+               exit={{ opacity: 0 }}
+          >
                <Head>
                     <title>Patrick Snowden</title>
                     <meta charSet="utf-8" />
@@ -31,6 +37,6 @@ export default function Home({ projects }) {
                <Header />
                <Hero />
                <FeaturedProjects />
-          </main>
+          </motion.main>
      );
 }

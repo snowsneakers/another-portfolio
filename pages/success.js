@@ -1,8 +1,14 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const success = () => {
      return (
-          <section className="flex items-center justify-center flex-col min-h-screen">
+          <motion.main
+               className="flex items-center justify-center flex-col min-h-screen"
+               initial={{ opacity: 0 }}
+               animate={{ opacity: 1 }}
+               exit={{ opacity: 0 }}
+          >
                <h1 className="text-black dark:text-white text-6xl mb-5">
                     Thank you ❤️
                </h1>
@@ -11,7 +17,7 @@ const success = () => {
                          Return Home
                     </button>
                </Link>
-          </section>
+          </motion.main>
      );
 };
 

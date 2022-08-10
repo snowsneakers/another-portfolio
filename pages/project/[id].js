@@ -1,14 +1,20 @@
 import Project from "../../components/Project";
 import Header from "../../components/Header";
 import { projects } from "../../data/projects";
+import { motion } from "framer-motion";
 
 export default function soloProject(repo) {
      // console.log(repo);
      return (
-          <main className="container-xl w-full md:w-[880px] mx-auto">
+          <motion.main
+               className="container-xl w-full md:w-[880px] mx-auto"
+               initial={{ opacity: 0 }}
+               animate={{ opacity: 1 }}
+               exit={{ opacity: 0 }}
+          >
                <Header />
                <Project projects={repo} />
-          </main>
+          </motion.main>
      );
 }
 
