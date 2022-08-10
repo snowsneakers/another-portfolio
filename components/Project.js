@@ -19,7 +19,7 @@ export default function Project({ projects }) {
           (repo) => repo.name === id.split("-").join(" ")
      );
 
-     console.log(projects.repo.map((x) => x.image));
+     // console.log(projects.repo.map((x) => x.image));
 
      const renderSwtich = (lan) => {
           switch (lan) {
