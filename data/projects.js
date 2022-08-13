@@ -34,7 +34,7 @@ export const projects = [
           techUsed: ["Next", "TailwindCSS", "node"],
           blurb: "This is the place to learn all things U.S. Presidents. Visiting the Presidents page will let you learn about each President. The quiz page will let you test your President Knowledge.",
           blurbConclusion:
-               "This project allowed me to use a data rich api that I made! I continued imporving my backend skills, as well as, refine my React and TailwindCSS skills.",
+               "This project allowed me to use a data rich API that I made! I continued improving my backend skills, as well as, refine my React and TailwindCSS skills.",
           description: "Learn about U.S. Presidents.",
           githubLink: "https://github.com/snowsneakers/next-presidents",
           liveLink: "https://next-presidents.vercel.app/",
