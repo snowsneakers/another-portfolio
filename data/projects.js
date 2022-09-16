@@ -1,10 +1,24 @@
 import moodyImg from "../assets/moody-songs.png";
 import portfolioImg from "../assets/portfolio.png";
 import presidentImg from "../assets/presidents.png";
+import teslaImg from "../assets/tesla-waiting-room.png"
+import sithImg from "../assets/sithpng.png"
 
 export const projects = [
      {
           id: 1,
+          name: "tesla waiting room",
+          image: teslaImg,
+          techUsed: ["React", "TailwindCSS", "node"],
+          blurb: "This project was built to help soon to be Tesla owners connect with eachother so everyone can get a better idea about when they can expect thier new car. Tesla Waiting Room was made using React and TailwindCSS in the frontend. Node.js and MongoDB were used in the backend. MVC was used to organize the backend. Users need to register to be able to access the app which allows them to follow, like, and create updates about thier cars estimated delivery time.",
+          blurbConclusion:
+               "This project allowed me to put everything I have learned into one app. I also had to manage my frustration and improve my problem solving skills.",
+          description: "An app for soon to be Tesla owners.",
+          githubLink: "https://github.com/snowsneakers/tesla-waiting-room",
+          liveLink: "",
+     },
+     {
+          id: 2,
           name: "portfolio",
           image: portfolioImg,
           techUsed: ["Next", "TailwindCSS"],
@@ -16,7 +30,7 @@ export const projects = [
           liveLink: "https://www.patricksnowden.com/",
      },
      {
-          id: 2,
+          id: 3,
           name: "moody songs",
           image: moodyImg,
           techUsed: ["React", "TailwindCSS", "node"],
@@ -28,7 +42,7 @@ export const projects = [
           liveLink: "https://moody-songs.netlify.app/",
      },
      {
-          id: 3,
+          id: 4,
           name: "Presidents",
           image: presidentImg,
           techUsed: ["Next", "TailwindCSS", "node"],
@@ -40,7 +54,19 @@ export const projects = [
           liveLink: "https://next-presidents.vercel.app/",
      },
      {
-          id: 4,
+          id: 5,
+          name: "stay in the hunt",
+          image: sithImg,
+          techUsed: ["ejs", "CSS", "node"],
+          blurb: "This project was built to help our friends at 100Devs stay in the game, helping them to track the different activities we need to do before Huntober. This project was made using HTML, CSS, JS in the frontend. OPP was used to create the calendar class. Node.js and MongoDB were used in the backend. MVC was used to orgainize the backend. Users need to register in the app to gain access to the calendar which allows them to create and track the tasks they need to complete for the day as well as add more if needed during Huntober.",
+          blurbConclusion:
+               "This was a group project. My team and I utilized GitHub to contribute our parts. I gained experience working in a group, as well as, imporve my git knowledge/ confidence.",
+          description: "Plan your days with this Huntober calendar.",
+          githubLink: "https://github.com/snowsneakers/stay-in-the-hunt",
+          liveLink: "https://sith.up.railway.app/",
+     },
+     {
+          id: 6,
           name: "whos that pokemon",
           image: "https://github.com/snowsneakers/Whos-That-Pokemon/raw/main/assets/updatedgif.gif",
           techUsed: ["JavaScript", "TailwindCSS", "HTML"],
@@ -52,7 +78,7 @@ export const projects = [
           liveLink: "https://whosthatpokemonsp.netlify.app/",
      },
      {
-          id: 5,
+          id: 7,
           name: "poke prices",
           image: "https://github.com/snowsneakers/pokemon-prices/blob/main/assets/pokeprices.gif?raw=true",
           techUsed: ["JavaScript", "TailwindCSS", "HTML"],
