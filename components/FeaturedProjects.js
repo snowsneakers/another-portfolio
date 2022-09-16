@@ -24,6 +24,10 @@ const FeaturedProjects = () => {
           setProjectAmount((prevState) => prevState + 4);
      };
 
+     const showLessProjects = () => {
+          setProjectAmount((prevState) => prevState - 4);
+     };
+
      return (
           <section className="container-xl flex justify-center text-black dark:text-[#eaeaea] tracking-tighter md:pb-20">
                <div className="border-[#b1b1b1] py-10 px-5 md:px-0">
@@ -35,16 +39,14 @@ const FeaturedProjects = () => {
                                    <Card key={project.id} project={project} />
                               ))}
                     </div>
-                    {projectAmount !== 8 && (
                          <div className="flex items-center justify-center">
                               <button
                                    className="bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] text transition duration-300 ease-in-out rounded px-2 py-0.5 text-md md:text-sm font-medium text-black dark:text-[#b1b1b1]"
-                                   onClick={showMoreProjects}
+                                   onClick={projectAmount >= 7 ? showLessProjects : showMoreProjects}
                               >
-                                   Show More
+                                   {projectAmount >= 7 ? "Show Less" : "Show More"}
                               </button>
                          </div>
-                    )}
                </div>
           </section>
      );
