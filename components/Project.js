@@ -119,7 +119,7 @@ export default function Project({ projects }) {
                                                   Github{" "}
                                                   <FaGithub className="ml-1" />
                                              </a>
-                                             <a
+                                            {project.liveLink === "" ? <button className="font-medium flex items-center justify-center py-0.5 px-1 rounded text-sm bg-gray-200 dark:bg-[#2A2A2A] hover:bg-gray-300 dark:hover:bg-[#424242] tracking-wide">Work In Progress</button> : <a
                                                   href={project.liveLink}
                                                   target="_blank"
                                                   rel="noreferrer"
@@ -127,7 +127,7 @@ export default function Project({ projects }) {
                                              >
                                                   Live{" "}
                                                   <FaExternalLinkAlt className="ml-1" />
-                                             </a>
+                                             </a>}
                                         </div>
                                    </div>
                               </section>
