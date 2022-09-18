@@ -3,6 +3,8 @@ import portfolioImg from "../assets/portfolio.png";
 import presidentImg from "../assets/presidents.png";
 import teslaImg from "../assets/tesla-waiting-room.png"
 import sithImg from "../assets/sithpng.png"
+import pokemonPricesImg from "../assets/pokemonprices.netlify.app_.png"
+import pokemonGameImg from "../assets/whosthatpokemonsp.netlify.app_.png"
 
 export const projects = [
      {
@@ -68,7 +70,7 @@ export const projects = [
      {
           id: 6,
           name: "whos that pokemon",
-          image: "https://github.com/snowsneakers/Whos-That-Pokemon/raw/main/assets/updatedgif.gif",
+          image: pokemonGameImg,
           techUsed: ["JavaScript", "TailwindCSS", "HTML"],
           blurb: "This will take everyone back to the good old days, the 90s. I wanted to create something using the pokeapi.co API, so I made a game to test your Pokemon knowledge. Chose your favorite generation, start guessing Pokemon, and get a high score! The Pokemon are pulled from the pokeapi.co API randomly and by selected generation. The silhouette is just some simple css.",
           blurbConclusion:
@@ -80,7 +82,7 @@ export const projects = [
      {
           id: 7,
           name: "poke prices",
-          image: "https://github.com/snowsneakers/pokemon-prices/blob/main/assets/pokeprices.gif?raw=true",
+          image: pokemonPricesImg,
           techUsed: ["JavaScript", "TailwindCSS", "HTML"],
           blurb: "Dust off those old card binders! Pokemon card prices are crazy right now. Using the pokemonTCG API I created an app to let the user search for any Pokemon card and see the price. Using OOP, the information is pulled from the api and appended to the DOM. The price information is manipulated using array methods.",
           blurbConclusion:
